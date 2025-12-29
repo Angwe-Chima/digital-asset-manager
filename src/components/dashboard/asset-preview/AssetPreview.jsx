@@ -23,7 +23,7 @@ import './AssetPreview.css';
 const AssetPreview = ({ asset, isOpen, onClose, onEdit, onDelete, onDownload }) => {
   const { isAdmin } = useAuth();
   const FileIcon = getFileIcon(asset?.fileType);
-  const fileUrl = asset ? `http://localhost:5000${asset.fileUrl}` : null;
+  const fileUrl = asset ? `https://digital-asset-manager-backend.onrender.com${asset.fileUrl}` : null;
 
   if (!asset) return null;
 

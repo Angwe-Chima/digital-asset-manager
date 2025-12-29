@@ -12,7 +12,7 @@ const AssetCard = ({ asset, onView, onEdit, onDelete, onDownload }) => {
   const { isAdmin } = useAuth();
   const FileIcon = getFileIcon(asset.fileType);
   const imageUrl = isImage(asset.fileType)
-    ? `http://localhost:5000${asset.fileUrl}`
+    ? `https://digital-asset-manager-backend.onrender.com${asset.fileUrl}`
     : null;
 
   const handleDownload = (e) => {

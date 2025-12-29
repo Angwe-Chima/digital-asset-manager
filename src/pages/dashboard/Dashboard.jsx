@@ -114,7 +114,7 @@ const Dashboard = () => {
 
       // Download file
       const link = document.createElement('a');
-      link.href = `http://localhost:5000${asset.fileUrl}`;
+      link.href = `https://digital-asset-manager-backend.onrender.com${asset.fileUrl}`;
       link.download = asset.name;
       document.body.appendChild(link);
       link.click();
