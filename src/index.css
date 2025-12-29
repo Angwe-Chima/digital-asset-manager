@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  /* Color Palette */
+  --primary: #3B82F6;
+  --secondary: #FFFFFF;
+  --dominant: #0F172A;
+  --success: #10B981;
+  --danger: #EF4444;
+  --warning: #F59E0B;
+
+  --gray-light: #F1F5F9;
+  --gray-medium: #64748B;
+  --gray-dark: #1E293B;
+
+  /* Typography */
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  --font-mono: "Fira Code", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dominant);
+  color: var(--secondary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+/* Utility Classes */
+.container-custom {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.text-gradient {
+  background-image: linear-gradient(to right, var(--primary), #1E40AF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
